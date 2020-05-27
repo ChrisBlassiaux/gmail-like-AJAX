@@ -1,0 +1,21 @@
+alert("le fichier JS est exécuté!");
+
+
+<% if @task.category_id == 1 %>
+  document.querySelectorAll(".card")[0].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% elsif @task.category_id == 2 %>
+  document.querySelectorAll(".card")[1].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% elsif @task.category_id == 3 %>
+  document.querySelectorAll(".card")[2].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% elsif @task.category_id == 4 %>
+  document.querySelectorAll(".card")[3].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% elsif @task.category_id == 5 %>
+   document.querySelectorAll(".card")[4].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% else %>
+   document.querySelectorAll(".card")[5].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
+<% end %>
+
+
+<%# document.querySelector("#<%= @category.title %><%# ").insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %><%# ") %>
+
+

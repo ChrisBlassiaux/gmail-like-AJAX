@@ -3,7 +3,7 @@
 
   <div class="row ml-3">
       <div class="offset-md-3 col-md-6 offset-md-3">
-          <%= form_tag(tasks_path, method: "post", class: "form", id: "contact-form")  do %>
+          <%= form_tag(tasks_path, method: "post", class: "form", id: "contact-form", remote: true)  do %>
               <div class="form-group">
                   <%= label_tag "Task", nil, class: "form-label" %>
                   <%= text_field_tag :title, nil, class: "form-control", placeholder: "Buy burgers" %>
