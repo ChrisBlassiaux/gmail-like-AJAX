@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/ZeddBox/faker_fr.git
+  revision: 12a5886b85f456934687d3ed2bfcffea109ce86b
+  branch: master
+  specs:
+    faker (2.11.0)
+      i18n (>= 1.6, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -89,8 +97,6 @@ GEM
       warden (~> 1.2.3)
     erubi (1.9.0)
     execjs (2.7.0)
-    faker (1.9.1)
-      i18n (>= 0.7)
     ffi (1.11.1)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
@@ -234,7 +240,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
-  faker
+  faker!
   font-awesome-rails
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
