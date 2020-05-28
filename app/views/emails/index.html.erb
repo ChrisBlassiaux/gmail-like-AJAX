@@ -5,37 +5,28 @@
       <h2>Check your emails</h2>
       <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
       
-      <%= link_to "Recevoir un email", new_email_path, class: "btn btn-primary" %>
+      <%= button_to "Receive an email", emails_path, data:{method: "POST"}, class:"btn btn-primary", remote: true %>
     </div>
 
     <div class="row mt-5">
      
       <div class="col-3">
-        <div class="list-group">
+        <div class="list-group" id="list-email">
           <h4>Objects</h4>
           <% @emails.each do |email| %>
-            <a href="#" class="list-group-item list-group-item-action">
-              <%= email.object %>
-            </a>
+            <%= render 'email', email: email %>
           <% end %>
         </div>
       </div>
 
        <div class="col-9">
           <h4>Email</h4>
-          <div class="card">
+          <div class="card" id="body-email">
             
           </div> 
       </div>
     </div> 
 
-    <footer class="mt-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2017-2020 ChrisBlassiaux</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://github.com/ChrisBlassiaux">Github</a></li>
-        <li class="list-inline-item"><a href="https://www.instagram.com/chris.blassiaux/?hl=fr">Instagram</a></li>
-        <li class="list-inline-item"><a href="http://chrisb.fr/">SiteWeb</a></li>
-      </ul>
-    </footer>
+  
   </div>
 </div>

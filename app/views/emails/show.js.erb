@@ -1,0 +1,8 @@
+
+document.getElementById('body-email').innerHTML = "";
+document.getElementById("body-email").insertAdjacentHTML("beforeend", "<%= j render 'show', email: @email %>");
+
+document.getElementById("<%= @email.id %>").classList.remove("text-light");
+document.getElementById("<%= @email.id %>").classList.remove("bg-secondary");
+
+  

@@ -1,0 +1,10 @@
+ <div class="card">
+  <div class="card-header">
+    <strong>Object : </strong> <%= @email.object %>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= @email.body %></p>
+    <%= link_to 'Supprimer', email_path(@email), method: :delete, class: "btn btn-secondary", remote: true %> 
+    <%= link_to 'Marquer comme non-lu', email_path(@email), method: :put, class: "btn btn-secondary", remote: true %> 
+  </div>
+</div> 
