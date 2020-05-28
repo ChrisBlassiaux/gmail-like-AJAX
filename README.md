@@ -16,5 +16,13 @@ https://gmail-like-todolist.herokuapp.com/
 
 ## :computer:  Que contient ce projet ?
 
+→ Implémentation AJAX : 
+```
+- Premier niveau d'AJAX : l'ajout d'un email
+- Deuxième niveau d'AJAX : afficher un email
+- Troisième niveau d'AJAX : la suppression d'un email
+- Quatrième niveau d'AJAX : email lu/non-lu
+```
+
 → Ce projet est codé en HTML, CSS, JS, RUBY, RAILS et AJAX.
 
